@@ -28,7 +28,7 @@ class GoogleCaptchaServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/google-captcha.php'   =>  config_path('google-captcha.php'),
             __DIR__ . '/../lang/google-captcha.php'     =>  lang_path('en/google-captcha.php')
-        ]);
+        ], 'google-captcha');
     }
 
 }

@@ -6,7 +6,7 @@
 
 ### Publish vendor files
 
-`php artisan vendor:publish --tag=laravel-google-captcha`
+`php artisan vendor:publish --tag=google-captcha`
 
 ### Secret key
 Open `config/google-captcha.php` file and edit 
