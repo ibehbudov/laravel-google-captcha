@@ -1,0 +1,31 @@
+{
+    "name": "ibehbudov/laravel-google-captcha",
+    "description": "Google Captcha rule for Laravel validation",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ibehbudov\\LaravelGoogleCaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ibehbudov\\LaravelGoogleCaptcha\\Providers\\GoogleCaptchaServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-package-update": [
+            "@php artisan vendor:publish --tag=google-captcha"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ibrahim Behbudov",
+            "email": "i.behbudov21@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
