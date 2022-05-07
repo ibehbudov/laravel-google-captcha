@@ -8,6 +8,13 @@
             "Ibehbudov\\LaravelGoogleCaptcha\\": "src/"
         }
     },
+    "require": {
+        "guzzlehttp/guzzle": "7.4.*",
+        "illuminate/support": "9.*",
+        "illuminate/http": "9.*",
+        "psr/http-message": "1.0.*",
+        "illuminate/contracts": "9.*"
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -15,17 +22,11 @@
             ]
         }
     },
-    "scripts": {
-        "post-package-update": [
-            "@php artisan vendor:publish --tag=google-captcha"
-        ]
-    },
     "authors": [
         {
             "name": "Ibrahim Behbudov",
             "email": "i.behbudov21@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
 }

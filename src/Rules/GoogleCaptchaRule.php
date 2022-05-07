@@ -30,8 +30,6 @@ class GoogleCaptchaRule implements Rule
     {
         $this->googleCaptcha->validate($value);
 
-        dd($this->googleCaptcha->getErrorMessage());
-
         return $this->googleCaptcha->success();
     }
 
@@ -42,6 +40,6 @@ class GoogleCaptchaRule implements Rule
      */
     public function message()
     {
-        return __('Please fill google captcha');
+        return $this->googleCaptcha->getErrorMessage();
     }
 }
