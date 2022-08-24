@@ -2,11 +2,15 @@
 
 ### Installation
 
-`composer require ibehbudov/laravel-google-captcha`
+```php
+composer require ibehbudov/laravel-google-captcha`
+```
 
 ### Publish vendor files
 
-`php artisan vendor:publish --tag=google-captcha`
+```php
+php artisan vendor:publish --tag=google-captcha`
+```
 
 ### Secret key
 Open `config/google-captcha.php` file and edit 
