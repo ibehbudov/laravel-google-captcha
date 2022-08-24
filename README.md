@@ -3,13 +3,13 @@
 ### Installation
 
 ```php
-composer require ibehbudov/laravel-google-captcha`
+composer require ibehbudov/laravel-google-captcha
 ```
 
 ### Publish vendor files
 
 ```php
-php artisan vendor:publish --tag=google-captcha`
+php artisan vendor:publish --tag=google-captcha
 ```
 
 ### Secret key
